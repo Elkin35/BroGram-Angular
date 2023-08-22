@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg" id="navBar">
+    <div class="container-fluid">
+        <a href=""><img src="../assets/logo-2.png" width="70" height="70"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="" style="color:rgb(255, 255, 255);">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quienes-somos" style="color:rgb(255, 255, 255);">¿Que es BroGram?</a>
+                </li>
+
+
+
+            </ul>
+
+            <ul class="d-flex navbar">
+                <li class="nav-item" id="listaNavBar">
+                    <button class="boton-circular">
+                        <img src="../assets/fotoDePerfil.jpg" alt="Texto alternativo">
+                      </button>
+                </li>
+
+                <li class="nav-item" id="listaNavBar" style="margin-left: 2rem;">
+                    <button class="btn btn-danger">
+                        Cerrar sesión
+                    </button>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+
+
+<div style="text-align: center; margin: 2rem;">
+    <h1>{{title}}</h1>
+</div>
+
+<router-outlet></router-outlet>

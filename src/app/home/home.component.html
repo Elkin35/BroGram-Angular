@@ -1,0 +1,29 @@
+<div class="container rounded text-white" style="padding-top: 20px; background-color: #0a0318ad; overflow: auto;  height: 60%;">
+
+    <div class="row" style="padding-left: 20px; padding-right: 20px;">
+
+        <div class="row" style="margin-bottom: 10px;">
+
+            <div class="col-md-auto">
+                <input class="form-control-sm" type="text" placeholder="Ingrese una nueva tarea" [(ngModel)]="tareaNueva">
+            </div>
+
+            <div class="col-md-auto">
+                <button class="btn btn-primary btn-sm" (click)="agregarTarea(tareaNueva)"><i class="bi bi-plus-lg"></i></button>
+            </div>
+
+        </div>
+
+        <app-tarea-nueva *ngFor="let tarea of tareasNuevas; let i = index" [tarea]="tarea" [indice] = "i"></app-tarea-nueva>
+
+    </div>
+
+    <hr>
+
+    <div class="row" style="padding-left: 20px; padding-right: 20px; padding-bottom: 10px;">
+
+        <app-tarea-completada *ngFor="let tarea of tareasCompletadas; let i = index" [tarea]="tarea" [indice] = "i"></app-tarea-completada>   
+
+    </div>
+
+</div>
